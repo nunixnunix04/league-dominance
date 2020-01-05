@@ -1,6 +1,6 @@
 # League Dominance
 A python tool for analyzing a team's variable long term performance in the top 6 leagues since their inception.
-The tool takes James Curley's league match data (see below) and creates an average points per game over a length of matches specified by the user. The tool works for any team that has played in the tope league of any of the following countries from the corresponding years:
+The tool takes James Curley's league match data (see below) and creates graph of the average points per game over a length of matches specified by the user. The tool works for any team that has played in the top league of any of the following countries from their corresponding years:
 * England 1888-2019
 * Spain 1928-2016
 * Italy 1934 - 2018
@@ -23,7 +23,7 @@ This program can do/does the following:
 * Removes matches from lower divisions
 * Adds a column to the csv that lists which team (Home, Away, or Draw) won the match. (This is only done if the column doesn't already exist.
 
-The repository already comes with the formatted csv files (eg: england_1888_2016.json), but if the original data is updated or you want to use the tool for another country, use clean_data.py first to format it. Just open the file, change the variable 'country' to be the country whose data you're changing (eg: "england"), and run the program. The new csv file should be under a folder with the country's name.
+The repository already comes with the formatted csv files for the top 6 leagues (eg: england_1888_2016.json), but if the original data is updated or you want to use the tool for another country, use clean_data.py first to format it. Just open the file, change the variable 'country' to be the country whose data you're changing (eg: "england"), and run the program. The new csv file should be under a folder with the country's name. Also make sure you have made a [country]_settings.json file (see below).
 
 ## [country]_settings.json
 Each country has a file called [country]_settings.py. For the 6 countries in the repository, the setting files are already made and you shouldn't have to change them. However if you want to use the tool for another country, here is what is stored in the setting files:
